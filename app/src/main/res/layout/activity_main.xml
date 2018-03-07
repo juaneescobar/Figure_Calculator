@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.juanesteban.seccion_dos.MainActivity"
+    android:orientation="vertical"
+    android:background="#3949AB">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50pt"
+        android:id="@+id/ImagenActual" />
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#5B6BC0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lado a:"
+            android:id="@+id/Lado_1"
+            android:textColor="#ffff"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:id="@+id/Lado_a"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lado b:"
+            android:id="@+id/Lado_2"
+            android:textColor="#ffff"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:id="@+id/Lado_b"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base:"
+            android:id="@+id/Lado_3"
+            android:textColor="#ffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:id="@+id/Base"
+            android:inputType="number"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5B6BC0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio:"
+            android:id="@+id/Lado_4"
+            android:textColor="#ffff"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:id="@+id/Radio"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Altura:"
+            android:id="@+id/Lado_5"
+            android:textColor="#ffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:id="@+id/Altura"
+            android:inputType="number"/>
+
+
+    </LinearLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9FA8DA"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/Cuadrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8pt"
+            android:text="Cuadrado" />
+
+
+        <RadioButton
+            android:id="@+id/Triangulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8pt"
+            android:text="Triangulo" />
+
+
+        <RadioButton
+            android:id="@+id/Cubo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8pt"
+            android:text="Cubo" />
+
+        <RadioButton
+            android:id="@+id/Circulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8pt"
+            android:text="Circulo" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30pt"
+        android:text="Calcular"
+        android:gravity="center"
+        android:onClick="OnClickCalculate"
+        android:id="@+id/Calcular"
+        android:scrollbarSize="50pt"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Resultados"
+            android:textColor="#ffff"/>
+
+
+
+</LinearLayout>
+
